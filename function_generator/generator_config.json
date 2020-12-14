@@ -1,0 +1,12 @@
+{
+  "persistorServices": [
+    ["EVENT_GRID_BINDING", "eventGridTest", {"output_binding":  "true"}],
+    ["EVENT_HUB_BINDING", "eventHubPushTest", {"cardinality":  "many", "output_binding":  "true"}],
+    ["SERVICE_BUS_BINDING", "serviceBusPushTest", {"sb_type":  "topic", "timed_append":  "true"}],
+    ["EVENT_HUB_PULL", "eventHubPullTest", {"append":  "true", "timed_append":  "true", "receive_duration":  "5"}],
+    ["EVENT_HUB_PULL", "eventHubPullTestWithInvoker", {"invoker":  "true"}],
+    ["SERVICE_BUS_PULL", "serviceBusPullTest", {"sb_type":  "topic", "timed_append":  "true"}],
+    ["SERVICE_BUS_PULL", "serviceBusPullTestWithInvoker", {"invoker":  "true", "sb_type":  "topic"}]
+  ],
+  "output": "../output/test"
+}

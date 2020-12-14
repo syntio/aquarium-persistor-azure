@@ -1,0 +1,14 @@
+{
+  "scriptFile": "main.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "req",
+      "direction": "in",
+      "eventHubName": "%EVENT_HUB_NAME_BINDING%",
+      "connection": "EVENT_HUB_BINDING_CONNECTION_STR",
+      "consumerGroup": "%CONSUMER_GROUP%",
+      "dataType": "binary"
+    }
+  ]
+}

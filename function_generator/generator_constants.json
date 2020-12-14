@@ -1,0 +1,56 @@
+{
+  "appTypeFunctionJSON": {
+    "event_grid_binding": "event_grid_binding",
+    "event_hub_binding": "event_hub_binding",
+    "service_bus_binding": "service_bus_binding",
+    "event_hub_pull": "http_trigger",
+    "service_bus_pull": "http_trigger"
+  },
+  "additionalFeaturesAcceptables": {
+    "invoker": [
+      "event_hub_pull",
+      "service_bus_pull"
+    ],
+    "cardinality": [
+      "event_hub_binding"
+    ],
+    "sb_type": [
+      "service_bus_binding",
+      "service_bus_pull"
+    ],
+    "append": [
+      "event_grid_binding",
+      "service_bus_binding",
+      "event_hub_binding",
+      "service_bus_pull",
+      "event_hub_pull"
+    ],
+    "timed_append": [
+      "event_grid_binding",
+      "service_bus_binding",
+      "event_hub_binding",
+      "service_bus_pull",
+      "event_hub_pull"
+    ],
+    "output_binding": [
+      "event_grid_binding",
+      "service_bus_binding",
+      "event_hub_binding"
+    ]
+  },
+  "additionalFeaturesAllowedValues": {
+    "invoker": ["true", "false"],
+    "cardinality": ["one", "many"],
+    "sb_type": ["queue", "topic"],
+    "append": ["true", "false"],
+    "timed_append": ["true", "false"],
+    "metadata": ["true", "false"],
+    "output_binding": ["true", "false"]
+  },
+  "additionalFeaturesSingleConfigValue": [
+    "append",
+    "timed_append",
+    "metadata",
+    "output_binding"
+  ]
+}

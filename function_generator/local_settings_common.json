@@ -1,0 +1,72 @@
+{
+  "shared": [
+    "SERVICE_TYPE",
+    "PERSISTOR_STORAGE_CONNECTION_STRING",
+    "PERSISTOR_CONTAINER_NAME"
+  ],
+  "shared_bindings": [
+    "BINDING_SERVICE",
+    "STORE_PARAM"
+  ],
+  "event_grid_binding": [],
+  "event_hub_binding": [
+    "EVENT_HUB_NAME_BINDING",
+    "EVENT_HUB_BINDING_CONNECTION_STR",
+    "CONSUMER_GROUP"
+  ],
+  "service_bus_binding": [
+    "SERVICE_BUS_BINDING_QUEUE_NAME",
+    "SERVICE_BUS_BINDING_TOPIC_NAME",
+    "SERVICE_BUS_BINDING_SUB_NAME",
+    "SERVICE_BUS_BINDING_CONNECTION_STRING"
+  ],
+  "event_hub_pull": [
+    "EVENT_HUB_CONN_STRING",
+    "EVENT_HUB_NAME",
+    "EVENT_HUB_CONSUMER_GROUP",
+    "EVENT_HUB_IDLE_TIMEOUT",
+    "EVENT_HUB_RECEIVE_DURATION",
+    "EVENT_HUB_PREFETCH",
+    "EVENT_HUB_PULL_BATCH_SIZE",
+    "EVENT_HUB_CHECKPOINT_STORAGE_CONN_STRING",
+    "EVENT_HUB_CHECKPOINT_CONTAINER"
+  ],
+  "service_bus_pull": [
+    "SERVICE_BUS_CONNECTION_STRING",
+    "SERVICE_BUS_IDLE_TIMEOUT",
+    "SERVICE_BUS_RECEIVE_DURATION",
+    "SERVICE_BUS_PREFETCH",
+    "SERVICE_BUS_TYPE",
+    "SERVICE_BUS_QUEUE_NAME",
+    "SERVICE_BUS_TOPIC_NAME",
+    "SERVICE_BUS_SUB_NAME"
+  ],
+  "invoker": [
+    "FUNC_TO_INVOKE",
+    "DELAY_BETWEEN_FUNCS",
+    "INVOKER_TIMEOUT"
+  ],
+  "cardinality": [],
+  "sb_type": [],
+  "append": [
+    "APPEND"
+  ],
+  "timed_append": [
+    "TIMED_APPEND"
+  ],
+  "metadata": [
+    "GET_METADATA"
+  ],
+  "output_binding": [
+    "PERSISTOR_OUTPUT_BINDING"
+  ],
+  "immediately_updatable": [
+    "SERVICE_TYPE",
+    "SERVICE_BUS_TYPE",
+    "APPEND",
+    "TIMED_APPEND",
+    "GET_METADATA",
+    "BINDING_SERVICE",
+    "PERSISTOR_OUTPUT_BINDING"
+  ]
+}
