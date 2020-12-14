@@ -1,0 +1,15 @@
+{
+  "scriptFile": "main.py",
+  "entryPoint": "main",
+  "bindings": [
+    {
+      "name": "req",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "%SERVICE_BUS_BINDING_QUEUE_NAME",
+      "topicName": "%SERVICE_BUS_BINDING_TOPIC_NAME%",
+      "subscriptionName": "%SERVICE_BUS_BINDING_SUB_NAME%",
+      "connection": "SERVICE_BUS_BINDING_CONNECTION_STRING"
+    }
+  ]
+}

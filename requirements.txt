@@ -1,0 +1,7 @@
+azure-storage-blob~=12.5
+azure-servicebus~=0.5
+azure-functions~=1.4
+azure-eventhub~=5.2
+azure-eventhub-checkpointstoreblob~=1.1
+azure-eventhub-checkpointstoreblob-aio~=1.1
+requests~=2.24
